@@ -14,7 +14,7 @@ sources:
     url: "https://www.edpb.europa.eu/our-work-tools/our-documents/opinion-board-art-64/opinion-282024-certain-data-protection-aspects_en"
 schema:
   type: "Article"
-heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/?prompt=measured%20editorial%20regulatory%20documents%20prompt%20injection%20policy&aspect=hero
+heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/featured/promptinjection.report/prompt-injection-regulatory-liability.png
 heroAlt: "Prompt injection regulatory liability"
 ---
 
