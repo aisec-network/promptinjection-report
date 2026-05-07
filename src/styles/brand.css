@@ -1,43 +1,43 @@
-/* Brand override generated from shared/brand-books/promptinjection-report.json
- * This makes promptinjection-report visually distinct from sister sites in the same cluster.
- * Loaded after globals.css; overrides cluster defaults with brand-book values.
+/* Brand override for promptinjection-report — cluster=policy.
+ * Uses cluster-matching selector specificity (0,1,1) so this OVERRIDES the
+ * cluster defaults from globals.css, which use the same selector specificity.
+ * Source order wins; brand.css is imported after globals.css in BaseLayout.
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
 
-:root {
+body[data-cluster="policy"] {
   --bg: 254 242 242;
   --fg: 28 25 23;
   --surface: 254 226 226;
+  --muted: 254 242 242;
   --muted-fg: 159 18 57;
-
-  --brand-accent-rgb: 185 28 28;
+  --border: 159 18 57;
 
   --font-display: "Crimson Pro", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
 
+  /* Override the accent ramp midpoints with brand accent.
+   * The 400-700 range is what most components use. */
+  --accent-400: 185 28 28;
+  --accent-500: 185 28 28;
+  --accent-600: 185 28 28;
+  --accent-700: 185 28 28;
+
+  /* Brand metadata */
   --brand-tone: "warning-red-policy";
+  --brand-accent-rgb: 185 28 28;
 }
 
-body[data-cluster] {
-  background: rgb(var(--bg));
-  color: rgb(var(--fg));
-  font-family: var(--font-body);
-}
-
-body[data-cluster] h1, body[data-cluster] h2, body[data-cluster] h3,
-body[data-cluster] .display {
-  font-family: var(--font-display);
-}
-
-/* Override accent ramp midpoint with brand accent */
-body[data-cluster] {
-  --accent-500: var(--brand-accent-rgb);
-  --accent-600: var(--brand-accent-rgb);
-}
-
-/* Surface treatment per tone */
-body[data-cluster] .card,
-body[data-cluster] article {
-  background: rgb(var(--surface));
+/* Same in dark mode (most brand books are dark-tone already) */
+html.dark body[data-cluster="policy"] {
+  --bg: 254 242 242;
+  --fg: 28 25 23;
+  --surface: 254 226 226;
+  --muted: 254 242 242;
+  --muted-fg: 159 18 57;
+  --accent-400: 185 28 28;
+  --accent-500: 185 28 28;
+  --accent-600: 185 28 28;
+  --accent-700: 185 28 28;
 }
