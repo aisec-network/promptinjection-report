@@ -2,7 +2,7 @@
 title: "When Prompt Injection Becomes a Regulatory Failure: Liability Surfaces for Foundation Model Deployers"
 description: "Prompt injection has been a security problem since 2022. As of 2026, it's also a compliance problem. Where the regulatory liability actually attaches, and what deployers should document."
 pubDate: 2026-05-07
-author: "Hannah Linden"
+author: "Marcus Reyes"
 tags: ["prompt-injection", "regulatory-liability", "eu-ai-act", "compliance", "policy"]
 category: "policy"
 sources:

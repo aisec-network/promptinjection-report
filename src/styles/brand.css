@@ -1,11 +1,7 @@
-/* Brand + visual variant for promptinjection-report
- * cluster: policy
- * variant: v3_split_asymmetric_brutalist
- * Generated 2026-05-07. Higher specificity than globals.css cluster rules. */
-
+/* Brand for promptinjection-report: cluster=offensive, variant=v3_split_asymmetric_brutalist */
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
 
-body[data-cluster='policy'] {
+body[data-cluster='offensive'] {
   --bg: 254 242 242;
   --fg: 28 25 23;
   --surface: 254 226 226;
@@ -22,33 +18,7 @@ body[data-cluster='policy'] {
   --brand-accent-rgb: 185 28 28;
   --brand-variant: "v3_split_asymmetric_brutalist";
 }
-html.dark body[data-cluster='policy'] {
+html.dark body[data-cluster='offensive'] {
   --bg: 254 242 242; --fg: 28 25 23; --surface: 254 226 226;
   --accent-500: 185 28 28; --accent-600: 185 28 28;
-}
-
-
-body[data-cluster='policy'] {
-  --type-scale: 1.500;
-  --space-y: 0.25rem;
-}
-body[data-cluster='policy'] h1 { font-size: calc(1rem * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale)); line-height: 1.05; }
-body[data-cluster='policy'] h2 { font-size: calc(1rem * var(--type-scale) * var(--type-scale) * var(--type-scale)); line-height: 1.15; }
-body[data-cluster='policy'] h3 { font-size: calc(1rem * var(--type-scale) * var(--type-scale)); line-height: 1.2; }
-body[data-cluster='policy'] p { margin-block: var(--space-y); }
-
-
-/* Hero / header layout — variant: split-large */
-body[data-cluster='policy'] .hero, body[data-cluster='policy'] header.site-header { display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; padding: 5rem 1rem; }
-
-/* Card style — variant: flat */
-body[data-cluster='policy'] article { background: rgb(254 226 226); }
-
-/* Accent application — variant: block-fill */
-body[data-cluster='policy'] h1, body[data-cluster='policy'] h2 { background: rgb(185 28 28); color: rgb(254 242 242); display: inline-block; padding: 0.1em 0.4em; }
-
-/* Border radius — variant uses 0 */
-body[data-cluster='policy'] article,
-body[data-cluster='policy'] .card {
-  border-radius: 0;
 }

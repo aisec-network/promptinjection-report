@@ -1,17 +1,16 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const persona = {
-  name: "Hannah Linden",
-  bioShort: "Privacy-tech policy researcher. Covers GDPR, the EU AI Act, and global AI governance. Writes for practitioners who need to understand the legal landscape, not just the technical one.",
-  bioLong: "Hannah Linden researches the intersection of AI systems and privacy law, with a focus on EU and US regulatory frameworks. She holds an LLM with a focus on technology law and has advised on GDPR compliance for AI companies. Her writing translates regulatory complexity for technical teams who need to know what compliance actually requires \u2014 not just what regulators say in press releases.",
-  voice: ["measured", "regulation-aware", "EU-perspective", "citation-heavy"],
-  sites: ["aiprivacy-report", "aimoderationtools-com", "aidefense-dev", "neuralwatch-org"],
+  name: "Marcus Reyes",
+  bioShort: "Red teamer with OSCP + OSEP. Ten years breaking AI systems before it was a job title. Presents at AI Village. Writes about what actually works, not what vendors claim.",
+  bioLong: "Marcus Reyes is a senior adversarial AI researcher who has been breaking ML systems since before the field had a name. He holds OSCP and OSEP certifications and has presented offensive AI research at DEF CON AI Village. He approaches AI security from a practitioner's lens \u2014 skeptical of vendor claims, focused on reproducible attack chains, and direct about what blue teams actually miss.",
+  voice: ["confident", "war-stories", "slightly contrarian", "practitioner-first"],
+  sites: ["adversarialml-dev", "aiattacks-dev", "aisec-blog", "jailbreakdb-com", "jailbreaks-fyi", "mlcves-com"],
 };
-const avatarUrl = "https://aisec-imagegen.th3gptoperator.workers.dev/?prompt=Professional%20headshot%20of%20Hannah%20Linden%2C%20a%20blonde%20European%20woman%20in%20her%20early%2040s%2C%20professional%20background%2C%20thoughtful%20look%2C%20photorealistic%2C%20professional%20headshot%2C%20square&aspect=square";
+const avatarUrl = "https://aisec-imagegen.th3gptoperator.workers.dev/?prompt=Professional%20headshot%20of%20Marcus%20Reyes%2C%20a%20confident%20Latino%20man%20in%20his%20mid-30s%2C%20dark%20background%2C%20subtle%20technical%20aesthetic%2C%20high%20contrast%2C%20photorealistic%2C%20professional%20headshot%2C%20square&aspect=square";
 ---
 <BaseLayout title={`About ${persona.name}`} description={persona.bioShort}>
-  <script type="application/ld+json" set:html={JSON.stringify({"@context": "https://schema.org", "@type": "Person", "name": "Hannah Linden", "description": "Privacy-tech policy researcher. Covers GDPR, the EU AI Act, and global AI governance. Writes for practitioners who need to understand the legal landscape, not just the technical one.", "url": "https://promptinjection.report/about", "knowsAbout": ["measured", "regulation-aware", "EU-perspective", "citation-heavy"], "sameAs": ["https://aiprivacy.report/about", "https://aimoderationtools.com/about", "https://aidefense.dev/about", "https://neuralwatch.org/about"], "jobTitle": "Measured"})}></script>
-
+  <script type="application/ld+json" set:html={JSON.stringify({"@context": "https://schema.org", "@type": "Person", "name": "Marcus Reyes", "description": "Red teamer with OSCP + OSEP. Ten years breaking AI systems before it was a job title. Presents at AI Village. Writes about what actually works, not what vendors claim.", "url": "https://promptinjection.report/about", "knowsAbout": ["confident", "war-stories", "slightly contrarian", "practitioner-first"], "sameAs": ["https://adversarialml.dev/about", "https://aiattacks.dev/about", "https://aisec.blog/about", "https://jailbreakdb.com/about", "https://jailbreaks.fyi/about", "https://mlcves.com/about"], "jobTitle": "Confident"})}></script>
   <article class="prose mx-auto max-w-2xl py-16 px-4">
     <h1>About {persona.name}</h1>
     <img src={avatarUrl} alt={persona.name} width="200" height="200" style="border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1.5rem;" loading="eager" />
