@@ -1,24 +1,35 @@
-/* Brand for promptinjection-report: cluster=offensive, variant=v3_split_asymmetric_brutalist */
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+/* Brand for promptinjection-report: identity=f24_sans_unbounded_inter+p10_h113_zinc+directory+v09_lab_log */
 
-body[data-cluster='offensive'] {
-  --bg: 254 242 242;
-  --fg: 28 25 23;
-  --surface: 254 226 226;
-  --muted: 254 242 242;
-  --muted-fg: 159 18 57;
-  --border: 159 18 57;
-  --font-display: "Crimson Pro", system-ui, sans-serif;
-  --font-body: "Inter", system-ui, sans-serif;
-  --accent-400: 185 28 28;
-  --accent-500: 185 28 28;
-  --accent-600: 185 28 28;
-  --accent-700: 185 28 28;
-  --brand-tone: "warning-red-policy";
-  --brand-accent-rgb: 185 28 28;
-  --brand-variant: "v3_split_asymmetric_brutalist";
+body[data-cluster] {
+  --bg: 255 255 255;
+  --fg: 24 24 27;
+  --muted: 250 250 250;
+  --muted-fg: 82 82 91;
+  --border: 228 228 231;
+  --surface: 255 255 255;
+  --surface-alt: 250 250 250;
+  --font-display: Unbounded, "Helvetica Neue", system-ui, sans-serif;
+  --font-body: Inter, "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --brand-accent-rgb: 45 223 22;
+  --brand-identity-font: "f24_sans_unbounded_inter";
+  --brand-identity-palette: "p10_h113_zinc";
+  --brand-identity-layout: "directory";
+  --brand-identity-voice: "v09_lab_log";
 }
-html.dark body[data-cluster='offensive'] {
-  --bg: 254 242 242; --fg: 28 25 23; --surface: 254 226 226;
-  --accent-500: 185 28 28; --accent-600: 185 28 28;
+
+html.dark body[data-cluster] {
+  --bg: 24 24 27;
+  --fg: 250 250 250;
+  --muted: 39 39 42;
+  --muted-fg: 161 161 170;
+  --border: 63 63 70;
+  --surface: 24 24 27;
+  --surface-alt: 39 39 42;
+  --brand-accent-rgb: 112 242 95;
 }
+
+/* Density modifiers */
+body.density-loose  { --space-section: 5rem; }
+body.density-normal { --space-section: 3rem; }
+body.density-dense  { --space-section: 1.5rem; }
