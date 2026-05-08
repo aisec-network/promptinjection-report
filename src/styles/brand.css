@@ -11,7 +11,7 @@ body[data-cluster] {
   --font-display: Unbounded, "Helvetica Neue", system-ui, sans-serif;
   --font-body: Inter, "Helvetica Neue", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
-  --brand-accent-rgb: 45 223 22;
+  --brand-accent-rgb: 0 0 0;
   --brand-identity-font: "f24_sans_unbounded_inter";
   --brand-identity-palette: "p10_h113_zinc";
   --brand-identity-layout: "directory";
@@ -26,7 +26,7 @@ html.dark body[data-cluster] {
   --border: 63 63 70;
   --surface: 24 24 27;
   --surface-alt: 39 39 42;
-  --brand-accent-rgb: 112 242 95;
+  --brand-accent-rgb: 255 255 255;
 }
 
 /* Density modifiers */
