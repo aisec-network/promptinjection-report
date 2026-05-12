@@ -134,3 +134,8 @@ The documentation work is mechanical. The risk it mitigates is material. The two
 - US state-level AI laws taking effect (Colorado in 2026; California CPPA's AI rules pending)
 
 The window for "we'll address this when it becomes a problem" closed at the end of 2025. In 2026, addressing it is the baseline.
+
+## See also
+
+- [adversarial ML research](https://adversarialml.dev/)
+- [AI attack techniques](https://aiattacks.dev/)
